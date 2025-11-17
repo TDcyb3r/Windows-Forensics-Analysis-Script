@@ -1,12 +1,7 @@
 #!/bin/bash
 
 # ───────────────────────────────────────────────
-# STUDENT: s5
-# STUDENTS NAME: Tomer Deri
-# ID: 208660589
-# PROGRAM CODE: nx212
-# UNIT: TMagen773637
-# LECTURER: Erel Regev
+# NAME: Tomer Dery
 # ───────────────────────────────────────────────
 
 # ───── Colors ─────
