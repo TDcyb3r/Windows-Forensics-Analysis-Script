@@ -60,10 +60,54 @@ Searches the carved output for .pcap files:
 - Reports findings to the user
 - Logs a message if none are found
 
-# 6. Searches the carved output for .pcap files:
-	•	Logs their size and location
-	•	Reports findings to the user
-	•	Logs a message if none are found
+# 6. Report Generation
+After all analysis is complete, the script:
+- Generates a summary report with:
+- Input file analyzed
+- Date
+- Number of extracted files
+- Volatility profile used
+- Compresses all output into a single ZIP archive
+- Displays a final completion message
+
+---
+
+## Execution Flow
+	1.	Validate root access
+	2.	Ask for the disk/memory image path
+	3.	Install missing tools
+	4.	Perform data carving
+	5.	Extract strings and detect credentials
+	6.	Run memory analysis (if applicable)
+	7.	Detect PCAP files
+	8.	Generate final report
+	9.	Create ZIP package
+	10.	Display runtime summary and exit
+
+---
+
+## Output Structure
+Typical output includes:
+- carved/ – carved files from foremost, bulk-extractor, binwalk
+- strings.txt – extracted readable strings
+- possible_credentials.txt – filtered credential-like strings
+- memory_analysis/ – volatility output (if memory dump)
+- analysis.log – full log of script actions
+- report.txt – final summary
+- <timestamp>.zip – compressed archive of all results
+
+---
+
+## ⚠️ Legal Notice
+This script is intended for educational and authorized forensic use only.
+Do not analyze files you do not have the right to access.
+
+---
+
+## Author
+Tomer Dery
+
+
 
 
 
